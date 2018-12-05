@@ -7,6 +7,10 @@ var proxy_yeslist = [
 "*.tensorflow.org*","*shadowsocks.org*", "*ip8.com*"
 ];
 
+var proxy_y2list = [
+"*sis001.com*", "*whoer.net*"
+];
+
 var proxy_directlist = [
 "*baidu.com*", "*qq.com*", "ip111.cn", "*csdn.net*", "*proxyscrape.com*","*toutiao.com*","*tianya.cn*",
 "*dichvusocks.us*","*github.com*"
@@ -63,6 +67,11 @@ else
 for(var i=0; i<proxy_yeslist.length; i++) {
     if ( shExpMatch(host, proxy_yeslist[i]) )
       return proxy_yes[3];
+}
+/**/
+for(var i=0; i<proxy_y2list.length; i++) {
+    if ( shExpMatch(host, proxy_y2list[i]) )
+      return proxy_yes[5];
 }
 
 for(var i=0; i<proxy_directlist.length; i++) {
