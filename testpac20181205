@@ -36,5 +36,32 @@ for(var i=0; i<proxy_directlist.length; i++) {
       return proxy_direct ;
 }
 
-return proxy_yes[5];
+var mt=new Date().getMinutes();//取分钟
+var x=0
+if (mt>50)
+  {
+  x=5;
+  }
+else if (mt>40)
+  {
+  x=4;
+  }
+else if (mt>30)
+  {
+  x=3;
+  }
+else if (mt>20)
+  {
+  x=2;
+  }
+else if (mt>10)
+  {
+  x=1;
+  }
+else
+  {
+  x=0;
+  }
+
+return proxy_yes[x];
 }
