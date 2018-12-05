@@ -4,7 +4,7 @@ var proxy_yeslist = [
 "*google*","*goo.gl*","*gmail*", "*youtube*","*ytimg.com*", "*chrome.com*","*android.com*",
 "*ggpht.com*", "*blogger.com*","*wordpress.com*","*facebook.com*","*twitter.com*","*twimg.com*", 
 "*tumblr.com*","*instagram.com*","*blogspot.com*", "*blogblog.com*", "dist.github.com*",
-"*.tensorflow.org*","*shadowsocks.org*",
+"*.tensorflow.org*","*shadowsocks.org*", "*qq.com*"
 ];
 
 var proxy_directlist = [
