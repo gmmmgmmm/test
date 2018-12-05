@@ -59,12 +59,12 @@ else
   x=0;
   };
 
-/*
+/**/
 for(var i=0; i<proxy_yeslist.length; i++) {
     if ( shExpMatch(host, proxy_yeslist[i]) )
       return proxy_yes[3];
 }
-*/
+
 for(var i=0; i<proxy_directlist.length; i++) {
     if ( shExpMatch(host, proxy_directlist[i]) )
       return proxy_direct ;
