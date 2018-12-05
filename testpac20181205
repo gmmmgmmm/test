@@ -66,7 +66,7 @@ else
 /**/
 for(var i=0; i<proxy_yeslist.length; i++) {
     if ( shExpMatch(host, proxy_yeslist[i]) )
-      return proxy_yes[11];
+      return proxy_yes[15];
 }
 /**/
 for(var i=0; i<proxy_y2list.length; i++) {
@@ -79,5 +79,5 @@ for(var i=0; i<proxy_directlist.length; i++) {
       return proxy_direct ;
 }
 
-return proxy_yes[11];
+return proxy_yes[15];
 }
