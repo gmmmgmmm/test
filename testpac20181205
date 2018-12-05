@@ -20,7 +20,7 @@ var proxy_direct = "DIRECT;";
 var proxy_yes =  [
 "SOCKS5 192.169.156.211:61486;",
 "SOCKS5 51.38.95.16:1080;",
-"SOCKS5 188.213.161.90:1080;",
+"SOCKS5 50.62.35.81:62871;",
 "SOCKS5 59.115.41.99:1080;",
 "SOCKS5 59.115.47.160:1080;",
 "SOCKS5 185.141.33.39:1080;",//5
@@ -36,7 +36,7 @@ var proxy_yes =  [
 "SOCKS5 95.104.54.227:9999;"
 ];
 /*
-"SOCKS5 50.62.35.81:62871;",
+"SOCKS5 ;",
 "SOCKS5 132.148.1.20:54978;",
 "SOCKS5 159.65.47.121:1080;",
 "SOCKS5 132.148.130.46:9196;",
@@ -104,5 +104,5 @@ for(var i=0; i<proxy_directlist.length; i++) {
       return proxy_direct ;
 }
 
-return proxy_yes[7];
+return proxy_yes[4];
 }
