@@ -8,7 +8,7 @@ var proxy_yeslist = [
 ];
 
 var proxy_y2list = [
-"*sis001.com*", "*whoer.net*"
+"*sis001.com*", "*whoer.net*" , "*key8.com*"
 ];
 
 var proxy_directlist = [
