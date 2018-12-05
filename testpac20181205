@@ -26,7 +26,7 @@ var proxy_yes =  [
 "SOCKS5 192.169.249.49:17708;SOCKS5 192.169.189.215:62971;"
 ];
 
-var mt=new Date().getMinutes();//取分钟
+var mt=new Date().getSeconds();//取秒
 var x=0;
 if (mt>50)
   {
