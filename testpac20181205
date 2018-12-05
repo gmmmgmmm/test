@@ -26,7 +26,7 @@ var proxy_yeslist = [
 
 var proxy_directlist = [
 "*baidu.com*", "*qq.com*", "ip111.cn", "*csdn.net*", "*proxyscrape.com*","*toutiao.com*","*tianya.cn*",
-"*dichvusocks.us*"
+"*dichvusocks.us*","*github.com*"
 ];
 
 var proxy_direct = "DIRECT;";
