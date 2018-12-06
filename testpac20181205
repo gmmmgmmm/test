@@ -77,11 +77,11 @@ for(var i=0; i<proxy_yeslist.length; i++) {
     if ( shExpMatch(host, proxy_yeslist[i]) )
       return proxy_yes[15];
 }*/
-/*
+/**/
 for(var i=0; i<proxy_y2list.length; i++) {
     if ( shExpMatch(host, proxy_y2list[i]) )
-      return proxy_yes[7];
-}*/
+      return proxy_yes[8];
+}
 
 for(var i=0; i<proxy_directlist.length; i++) {
     if ( shExpMatch(host, proxy_directlist[i]) )
