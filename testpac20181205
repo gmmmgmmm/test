@@ -19,7 +19,6 @@ var proxy_directlist = [
 
 var proxy_direct = "DIRECT;";
 var proxy_yes =  [
-
 "SOCKS5 51.38.95.16:1080;",
 "SOCKS5 50.62.35.81:62871;",
 "SOCKS5 50.62.35.162:43185;",
@@ -27,7 +26,7 @@ var proxy_yes =  [
 "SOCKS5 192.169.156.211:61486;", 
 "SOCKS5 159.65.47.121:1080;", 
 "SOCKS5 13.81.169.254:1080;", 
-"SOCKS5 180.168.132.58:1080;"//
+"SOCKS5 180.168.132.58:1080;"//7
 ];
 /*
 "SOCKS5 ;",
@@ -108,5 +107,5 @@ for(var i=0; i<proxy_directlist.length; i++) {
       return proxy_direct ;
 }
 
-return proxy_yes[7];
+return proxy_yes[6];
 }
