@@ -23,15 +23,13 @@ var proxy_yes =  [
 "SOCKS5 50.62.35.81:62871;",
 "SOCKS5 50.62.35.162:43185;",
 "SOCKS5 192.169.188.100:12071;", 
-"SOCKS5 192.169.156.211:61486;"//
+"SOCKS5 192.169.156.211:61486;", 
+"SOCKS5 159.65.47.121:1080;", 
+"SOCKS5 13.81.169.254:1080;", 
+"SOCKS5 180.168.132.58:1080;"//
 ];
 /*
 "SOCKS5 ;",
-
-
-159.65.47.121:1080
-13.81.169.254:1080
-180.168.132.58:1080
 */
 var mt=new Date().getSeconds();//取秒
 var x=0;
@@ -65,16 +63,16 @@ for(var i=0; i<proxy_yeslist.length; i++) {
     if ( shExpMatch(host, proxy_yeslist[i]) )
       return proxy_yes[15];
 }*/
-/**/
+/*
 for(var i=0; i<proxy_y2list.length; i++) {
     if ( shExpMatch(host, proxy_y2list[i]) )
       return proxy_yes[1];
-}
+}*/
 
 for(var i=0; i<proxy_directlist.length; i++) {
     if ( shExpMatch(host, proxy_directlist[i]) )
       return proxy_direct ;
 }
 
-return proxy_yes[1];
+return proxy_yes[5];
 }
