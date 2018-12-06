@@ -14,6 +14,7 @@ var proxy_y2list = [
 var proxy_directlist = [
 "*baidu.com*", "*qq.com*", "ip111.cn", "*csdn.net*", "*proxyscrape.com*","*toutiao.com*","*tianya.cn*",
 "*dichvusocks.us*","*github.com*","*checksocks5.com*" ,"*sell5socks.net*","*githubusercontent*","*pstatp.com*"
+,"*weibo.com*"
 ];
 
 var proxy_direct = "DIRECT;";
