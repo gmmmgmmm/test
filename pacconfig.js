@@ -10,7 +10,7 @@ function FindProxyForURL(url, host) {
         "SOCKS5 13.81.169.254:1080;",
         "SOCKS5 104.35.211.144:7241;",
         "SOCKS5 59.115.36.182:1080;",
-        "SOCKS5 59.115.43.71:1080;",
+        "SOCKS5 59.115.43.71:1080;",//8
         "SOCKS5 59.115.37.83:1080;",
         "SOCKS5 115.71.237.179:1080;",
         "SOCKS5 107.170.42.147:56508;",
@@ -79,6 +79,6 @@ function FindProxyForURL(url, host) {
     } else {
         x = 0;
     };
-    x = 8+5;
+    x = 8+0;
     return proxy_yes[x]
 }
