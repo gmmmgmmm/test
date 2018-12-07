@@ -57,11 +57,11 @@ function FindProxyForURL(url, host) {
                 proxy_directlist[i]))
             return proxy_direct
     }
-    /*
+   
     for (i = 0; i < proxy_yeslist.length; i++) {
         if (shExpMatch(host,
                 proxy_yeslist[i]))
-            return proxy_yes[0]
+            return proxy_yes[2]
     }
     
     var mt = new Date().getSeconds();
@@ -78,7 +78,7 @@ function FindProxyForURL(url, host) {
         x = 1;
     } else {
         x = 0;
-    };*/
+    };
     x = 8+5;
     return proxy_yes[x]
 }
