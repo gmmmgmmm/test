@@ -1,5 +1,5 @@
 function FindProxyForURL(url, host) {
-
+    var porxyindex = 0;
     var proxy_direct = "DIRECT;";
     var proxy_yes = [
         "SOCKS5 5.56.133.221:1080;",
@@ -7,7 +7,7 @@ function FindProxyForURL(url, host) {
         "SOCKS5 50.62.35.81:62871;",
         "SOCKS5 192.169.140.74:47797;",
         "SOCKS5 50.62.35.225:59537;",
-        "SOCKS5 13.81.169.254:1080;",//5
+        "SOCKS5 13.81.169.254:1080;", //5
         "SOCKS5 59.115.36.182:1080;",
         "SOCKS5 162.243.7.181:30445;",
         "SOCKS5 107.170.42.147:56508;",
@@ -103,37 +103,36 @@ function FindProxyForURL(url, host) {
         "*tianya.cn*",
         "*dichvusocks.us*",
         "*github.com*",
-        "*githubusercontent*"
-        ,"*cnblogs.com*"
+        "*githubusercontent*", "*cnblogs.com*"
     ];
     for (var i = 0; i <
         proxy_directlist.length; i++) {
         if (shExpMatch(host, proxy_directlist[i]))
             return proxy_direct
     }
-   /*
-    for (i = 0; i < proxy_yeslist.length; i++) {
-        if (shExpMatch(host,
-                proxy_yeslist[i]))
-            return proxy_yes[2]
-    }
-    
-    var mt = new Date().getSeconds();
-    var x = 0;
-    if (mt > 50) {
-        x = 5;
-    } else if (mt > 40) {
-        x = 4;
-    } else if (mt > 30) {
-        x = 3;
-    } else if (mt > 20) {
-        x = 2;
-    } else if (mt > 10) {
-        x = 1;
-    } else {
-        x = 0;
-    };
-    */
-    x = 9;
-    return proxy_yes[x]
+    /*
+     for (i = 0; i < proxy_yeslist.length; i++) {
+         if (shExpMatch(host,
+                 proxy_yeslist[i]))
+             return proxy_yes[2]
+     }
+     
+     var mt = new Date().getSeconds();
+
+     if (mt > 50) {
+         porxyindex = 5;
+     } else if (mt > 40) {
+         porxyindex = 4;
+     } else if (mt > 30) {
+         porxyindex = 3;
+     } else if (mt > 20) {
+         porxyindex = 2;
+     } else if (mt > 10) {
+         porxyindex = 1;
+     } else {
+         porxyindex = 0;
+     };
+     */
+    porxyindex = 9;
+    return proxy_yes[porxyindex]
 }
