@@ -122,6 +122,6 @@ function FindProxyForURL(url, host) {
         x = 0;
     };
     */
-    x = 5;
+    x = 4;
     return proxy_yes[x]
 }
