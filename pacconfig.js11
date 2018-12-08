@@ -77,6 +77,6 @@ function FindProxyForURL(url, host) {
         x = 0;
     };
     */
-    x = 9;
+    x = 8;
     return proxy_yes[x]
 }
