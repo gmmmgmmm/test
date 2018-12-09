@@ -20,6 +20,10 @@ function FindProxyForURL(url, host) {
     ,"SOCKS5 59.115.44.71:1080;"//15 tw
     
     ,"SOCKS5 166.62.59.175:37954"
+    ,"SOCKS5 122.116.161.100:30114"
+    ,"SOCKS5 50.62.35.162:43185"
+    ,"SOCKS5 104.238.97.230:48829"
+    ,"SOCKS5 163.172.166.20:4480"//20
   ];
   /*
 
@@ -60,7 +64,7 @@ if  ((m & 1) === 0)
   { porxyindex = 19; };
   
   */
- porxyindex = 11;
+ porxyindex = 10;
 //   porxyindex = 15;
   return proxy_yes[porxyindex]
 }
