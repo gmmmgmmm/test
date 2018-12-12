@@ -2,7 +2,7 @@ function FindProxyForURL(url, host) {
   var porxyindex = 0;
   var proxy_direct = "DIRECT;";
   var proxy_yes = [
-    "SOCKS5 5.56.133.221:1080;"
+     "SOCKS5 104.237.253.196:1080;"
     ,"SOCKS5 192.169.232.12:62194;"
     ,"SOCKS5 132.148.130.46:48684;"
     ,"SOCKS5 132.148.130.46:36939;"
