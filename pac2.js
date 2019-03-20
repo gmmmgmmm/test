@@ -1,25 +1,27 @@
 function FindProxyForURL(url, host) {
-  var porxyindex = 4;
-  //var porxyindex = 23;
-  //var porxyindex = 6;
-  //var porxyindex = 7;
-  var porxyindex = 29;
+  var porxyindex = 32;  
+  var porxyindex = 1;
+  //var porxyindex = 4;
+  //var porxyindex = 3+4;
+  //var porxyindex = 2;
+  //var porxyindex = 35; 
+  
   var proxy_direct = "DIRECT;";
   var proxy_yes = [
-"SOCKS5 128.199.99.165:1080;1.162.104.249:1080;59.115.38.205:1080;59.115.33.187:1080;59.115.54.135:1080;"//0 tw
- ,"SOCKS5 1.162.104.249:1080;1.169.254.151:1080;61.228.168.188:1080;61.228.174.78:1080;59.115.59.184:1080;59.115.46.146:1080;61.228.164.82:1080;"//1 tw 
-  ,"SOCKS5 118.193.190.35:8088;119.28.157.111:1080;115.195.173.39:1080;103.115.44.150:1080;"//2 alicloud
-,"SOCKS5 59.15.234.23:1080;220.79.87.188:1080;59.15.234.21:1080;119.28.149.37:1080;119.51.89.18:1080;59.0.122.177:1080;175.192.221.34:1080;"//3 kor
-,"SOCKS5 112.98.28.106:1080;119.28.19.225:1094;118.193.190.35:8088;157.119.74.11:8080;"//4 hk
-,"SOCKS5 47.93.7.198:1089;52.81.8.156:1080;13.54.202.98:1080;50.62.31.203:15469;108.61.160.130:1085;108.61.160.130:1109;"//5 jp
-  ,"SOCKS5 128.199.99.165:1080;178.128.98.50:1080;128.199.99.165:1080;128.199.178.158:1080;118.139.176.242:38155;210.77.24.191:1080;172.104.161.156:1080;111.223.75.178:8888;"//6 sg
-,"SOCKS5 192.169.249.80:25457;50.62.31.203:15469;192.169.140.51:29017;45.76.78.170:1080;172.246.69.205:14762;172.246.69.203:14762;14.153.53.12:1081;18.224.214.133:1081;209.74.107.3:1080;"//7 Amazon
+"SOCKS5 222.208.85.119:1080;202.9.37.19:1080;162.243.210.52:21439;"//0 
+ ,"SOCKS5 59.78.31.12:1080;59.110.172.224:1080;"//1 tw 
+  ,"SOCKS5 58.246.166.118:8080;45.55.27.15:1080;58.68.228.234:1234;23.226.56.2:1080;47.94.244.28:3001;47.244.114.83:1080;47.93.251.207:3001;"//2 alicloud
+,"SOCKS5 112.136.166.37:1080;222.112.229.91:1080;210.103.48.136:1080;"//3 kor
+,"SOCKS5 121.15.134.106:1080;113.251.221.30:1080;"//4 hk
+,"SOCKS5 112.17.80.142:1082;113.116.157.78:1080;114.67.92.113:1080;108.160.129.94:1080;"//5 jp
+  ,"SOCKS5 119.23.63.243:1080;47.101.47.32:1080;210.26.122.247:1080;"//6 sg
+,"SOCKS5 152.1.204.8:1080;39.105.90.17:3389;"//7 Amazon
     
-  ,"SOCKS5 116.203.33.254:1080;116.196.92.155:1080;192.151.146.130:11192;159.65.180.9:9050;107.181.174.75:55667;173.82.115.11:1080;156.239.58.1:1080;54.38.195.161:56741;182.150.28.60:10010;192.110.164.108:1080;"//8 Multacom US
+  ,"SOCKS5 107.181.174.75:55667;24.216.74.53:1080;"//8 Multacom US
   ,"SOCKS5 178.62.59.71:2005;162.144.58.218:34654;18.218.247.113:1080;"//9 UK
-  ,"SOCKS5 35.225.214.70:9581;80.211.211.251:1080;35.193.51.107:9251;"//10 Czechia 
+  ,"SOCKS5 149.56.27.45:1080;"//10 Czechia 
     
-  ,"SOCKS5 47.94.139.224:9999;47.244.116.125:1080;47.75.88.202:1080;47.74.231.43:1080;149.129.102.32:1080;150.109.126.218:1080;"//11 cn
+  ,"SOCKS5 61.19.201.13:8080;"//11 Thailand
   ,"SOCKS5 182.150.28.60:1097;47.89.247.40:1080;159.138.23.197:1080;"//12 huawei cn
     
   ,"SOCKS5 124.16.79.221:1080;38.130.225.195:1080;45.56.113.130:1080;45.63.56.100:1080;69.61.38.138:1080;"//13 Cogent US
@@ -39,10 +41,30 @@ function FindProxyForURL(url, host) {
   ,"SOCKS5 50.62.35.162:43185;50.62.35.81:62871;"//26 GoD
   ,"SOCKS5 37.59.8.29:28475;5.9.113.163:9000;"//27 fr
   ,"SOCKS5 89.110.44.6:1080;"//28 rus
-  ,"HTTPS japan03942.cdn-aliyun.com:443"//29
-  ,"HTTPS sg102932.cdn-aliyun.com:443"//29
-  ,"HTTPS uksadjsafsa.cdn-aliyun.com:443"//29
-  ,"HTTPS shop.cdn-aliyun.com:443"//29
+  ,"HTTPS losasdsfesfsffw3.cdn-aliyun.com:443"//29japan03942
+  ,"HTTPS 52.liankaihon.info:443"//30sg102932
+  ,"HTTPS uksadjsafsa.cdn-aliyun.com:443"//31
+  ,"HTTPS shop.cdn-aliyun.com:443"//32
+  ,"HTTPS jp2.tcpbbr.net:443;"//33
+  ,"HTTPS jp1.tcpbbr.net:443;"//34
+  ,"HTTPS gia.onhop.net:443"//35 11500k
+  ,"HTTPS us.onhop.net:443;"//36
+  ,"HTTPS uk.tcpbbr.net:443;"//37
+  ,"HTTPS www.tcpbbr.net:443;"//38
+  ,"HTTPS www.51netflix.com:1443;"//39
+  ,"HTTPS ru.onhop.net:443;"//40
+  ,"HTTPS wtt.21t.xyz:443;"//41
+  ,"HTTPS www.pickdown.net:1443;"//42
+  ,"HTTPS hgc.tcpbbr.net:443;"//43
+  ,"HTTPS fr.tcpbbr.net:443;"//44
+  ,"HTTPS us.tcpbbr.net:443;"//45
+  ,"HTTPS hkt.21t.xyz:443;"//
+  ,"HTTPS us2.tcpbbr.net:443:"//
+  ,"HTTPS 54.36.117.30:3128;"// 48
+  ,"HTTPS www.gunan.bid:9001"//49
+  ,"HTTPS uk.jiuyoujiu999.top:4033"//50
+  ,"HTTPS 1.2.169.14:46824;"//51
+  
   ];
   /*japan03942.cdn-aliyun.com:443
 sg102932.cdn-aliyun.com:443
@@ -56,7 +78,8 @@ shop.cdn-aliyun.com:443
   ];
   var proxy_directlist = [
     "*baidu.com*", "*qq.com*","*qqmail.com*", "ip111.cn", "*csdn.net*", "*proxyscrape.com*","*jb51.net*","ifeng.com",
-    "*toutiao.com*", "*tianya.cn*", "*dichvusocks.us*", "*github.com*","*gitlab.com*",
+    "*toutiao.com*", "*tianya.cn*", "*dichvusocks.us*", "*github.com*","*gitlab.com*","*guancha.cn*"
+    ,"*pangzi.ca*","*gttv.tv*",
     "*githubusercontent*", "*cnblogs.com*","*tianyaui.com*"
     ,"*pstatp.com*","*.huanqiu.*","*jianshu.com*","*jd.com*"
   ];
@@ -66,25 +89,7 @@ shop.cdn-aliyun.com:443
     if (shExpMatch(host, proxy_directlist[i]))
       return proxy_direct
   }
-  /*
-   for (i = 0; i < proxy_yeslist.length; i++) {
-       if (shExpMatch(host,
-               proxy_yeslist[i]))
-           return proxy_yes[2]
-   }
-
-  var d = new Date();
-  var h = d.getHours();
-  var m = d.getMinutes();
-  var se = d.getSeconds(); 
-if  ((m & 1) === 0) 
-{
-  porxyindex = 14;
-  }
-  else
-  { porxyindex = 19; };
   
-  */
- //porxyindex =29;
+ //porxyindex =51;
   return proxy_yes[porxyindex]
 }
