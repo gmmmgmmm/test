@@ -3,7 +3,7 @@ function FindProxyForURL(url, host) {
   var porxyindex = 1;
   //var porxyindex = 4;
   //var porxyindex = 3+4;
-  //var porxyindex = 2;
+  var porxyindex = 2;
   //var porxyindex = 35; 
   
   var proxy_direct = "DIRECT;";
